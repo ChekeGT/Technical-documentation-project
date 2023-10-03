@@ -16,18 +16,6 @@ html, body{
 main{
     background-color: #fff;
 }
-.main-section, footer{
-    padding-left: 250px;
-}
-.main-section header h2, footer h2{
-    padding-left: 15px;
-}
-.main-section p, .main-section h3,.main-section h4, footer p{
-    padding-left: 30px;
-}
-.main-section ul{
-    margin-left: 45px;
-}
 code{
     background-color: #f7f7f7;
     font-size: 17px;
@@ -35,33 +23,78 @@ code{
 }
 img{
     border: 2px solid #4d4e53;
-    margin-left: 20%;
+    margin-left: 5%;
     padding: 3px;
-}
-nav{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    border-right: 5px solid #99a1a1;
-}
-nav a:first-of-type{
-    border-top: 5px solid #99a1a1;
-}
-nav header{
-    padding-left: 15px;
-    padding-right: 20px;
-    text-align: center;
-}
-
-nav a {
-    padding: 14px;
-    text-align: left;
-    margin-bottom: 25px;
-    border-bottom: 5px solid #99a1a1;
-    text-decoration: none;
+    width: 80%;
+    max-width: 550px;
 }
 nav a:visited, nav a:link{
     color: #000;
     text-decoration: none;
+}
+a:visited, a:link{
+    color: #3f4186;
+    text-decoration: none
+}
+@media (min-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        border-right: 5px solid #99a1a1;
+    }
+    nav a:first-of-type{
+        border-top: 5px solid #99a1a1;
+    }
+    nav header{
+        padding-left: 15px;
+        padding-right: 20px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    nav a {
+        padding: 14px;
+        text-align: left;
+        margin-bottom: 25px;
+        border-bottom: 5px solid #99a1a1;
+        text-decoration: none;
+    }
+    .main-section, footer{
+        padding-left: 250px;
+    }
+    .main-section header h2, footer h2{
+        padding-left: 15px;
+    }
+    .main-section p, .main-section h3,.main-section h4, footer p{
+        padding-left: 30px;
+    }
+    .main-section ul{
+        margin-left: 45px;
+    }
+}
+@media (max-width: 600px){
+    nav{
+        display: flex;   
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+    }
+    nav header{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+    nav a:first-of-type{
+        border-top: 3px solid #99a1a1;
+    }
+    nav a{
+        border-bottom: 3px solid #99a1a1;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+    }
 }
